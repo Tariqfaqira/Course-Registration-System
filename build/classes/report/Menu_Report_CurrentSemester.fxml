@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="870.0" prefWidth="1420.0" style="-fx-background-color: lightgray;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="report.Menu_Report_CurrentSemester">
+   <children>
+      <Label alignment="CENTER" layoutY="20.0" prefHeight="64.0" prefWidth="1374.0" text="International Islamic University, Islamabad" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="20.0">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutY="65.0" prefHeight="52.0" prefWidth="1374.0" text="Report Menu" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="20.0">
+         <font>
+            <Font name="Times New Roman Bold" size="28.0" />
+         </font>
+      </Label>
+      <Button alignment="CENTER" defaultButton="true" layoutX="62.0" layoutY="167.0" mnemonicParsing="false" onAction="#handle_search" prefWidth="220.0" stylesheets="@../CSS/smallButtonscss.css" text="Search">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" defaultButton="true" layoutX="62.0" layoutY="619.0" mnemonicParsing="false" onAction="#handle_coursePermitionForm" prefWidth="220.0" stylesheets="@../CSS/smallButtonscss.css" text="Course Permition Form">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" defaultButton="true" layoutX="62.0" layoutY="658.0" mnemonicParsing="false" onAction="#handle_ShowGrades" prefWidth="220.0" stylesheets="@../CSS/smallButtonscss.css" text="Show Grades">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Button>
+      <Button alignment="CENTER" defaultButton="true" layoutX="62.0" layoutY="581.0" mnemonicParsing="false" onAction="#handle_CurrentSemester" prefWidth="220.0" stylesheets="@../CSS/smallButtonscss.css" text="Current Semester">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Button>
+      <TextField fx:id="searchTxt" layoutX="62.0" layoutY="124.0" onKeyPressed="#handle_EnterPressed_SearchTxt" prefHeight="31.0" prefWidth="220.0" promptText="Enter reg no">
+         <font>
+            <Font name="Times New Roman" size="15.0" />
+         </font>
+      </TextField>
+      <Button alignment="CENTER" defaultButton="true" layoutX="62.0" layoutY="742.0" mnemonicParsing="false" onAction="#handle_Print" prefWidth="220.0" stylesheets="@../CSS/smallButtonscss.css" text="Print">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Button>
+      <AnchorPane layoutX="62.0" layoutY="220.0" prefHeight="300.0" prefWidth="220.0" style="-fx-background-color: gray; -fx-border-color: white;">
+         <children>
+            <ListView fx:id="listView" onKeyPressed="#handle_KeyPressed" onMouseClicked="#handle_onmouseClicked_lReg_istView" prefHeight="300.0" prefWidth="220.0" style="-fx-background-color: lightblue;" styleClass="listView" stylesheets="@../CSS/fxml.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="323.0" layoutY="125.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="653.0" prefWidth="1000.0" style="-fx-background-color: white;">
+         <children>
+            <ListView fx:id="Student_list_1" layoutX="162.0" layoutY="78.0" prefHeight="570.0" prefWidth="339.0" />
+            <ListView fx:id="Student_list_2" layoutX="664.0" layoutY="78.0" prefHeight="199.0" prefWidth="333.0" AnchorPane.rightAnchor="3.0" />
+            <Label alignment="CENTER" layoutX="-1.5" layoutY="1.0" prefHeight="34.0" prefWidth="1003.0" style="-fx-border-color: gray; -fx-background-color: #f2f2f2;" text="Current Semester" AnchorPane.topAnchor="0.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <VBox layoutX="3.0" layoutY="78.0" prefHeight="570.0" prefWidth="160.0" style="-fx-border-color: lightgray;">
+               <children>
+                  <TextField editable="false" style="-fx-border-color: white;" text="Reg No:">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField editable="false" layoutX="10.0" layoutY="10.0" style="-fx-border-color: white;" text="Name:">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField editable="false" layoutX="10.0" layoutY="41.0" style="-fx-border-color: white;" text="Contact Number:">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField editable="false" layoutX="10.0" layoutY="72.0" style="-fx-border-color: white;" text="Father Contact:">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField editable="false" layoutX="10.0" layoutY="103.0" style="-fx-border-color: white;" text="Current Address:">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </VBox>
+            <VBox layoutX="505.0" layoutY="78.0" prefHeight="199.0" prefWidth="160.0" style="-fx-border-color: lightgray;">
+               <children>
+                  <TextField editable="false" style="-fx-border-color: white;" text="Degree Prog:">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField editable="false" layoutX="10.0" layoutY="10.0" style="-fx-border-color: white;" text="Bathch:">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField editable="false" layoutX="10.0" layoutY="43.0" style="-fx-border-color: white;" text="Session:">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField editable="false" layoutX="10.0" layoutY="76.0" style="-fx-border-color: white;" text="Semester:">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField editable="false" style="-fx-border-color: white;" text="Date:">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </VBox>
+            <TableView fx:id="tableView" layoutX="504.0" layoutY="330.0" prefHeight="318.0" prefWidth="492.0" tableMenuButtonVisible="true" AnchorPane.rightAnchor="3.0">
+              <columns>
+                  <TableColumn fx:id="C_sNo" minWidth="40.0" prefWidth="40.0" text="S.No" />
+                <TableColumn fx:id="C_code" minWidth="100.0" prefWidth="100.0" text="Course Code" />
+                <TableColumn fx:id="C_name" minWidth="235.0" prefWidth="235.0" text="Course Name" />
+                  <TableColumn fx:id="C_creditHrs" minWidth="100.0" prefWidth="100.0" text="Credit Hours" />
+              </columns>
+            </TableView>
+            <Label alignment="CENTER" layoutX="1.0" layoutY="45.0" prefHeight="34.0" prefWidth="498.0" style="-fx-border-color: gray; -fx-background-color: #f2f2f2;" text="Personal Information" AnchorPane.leftAnchor="3.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="501.0" layoutY="45.0" prefHeight="34.0" prefWidth="492.0" style="-fx-border-color: gray; -fx-background-color: #f2f2f2;" text="Degree Information" AnchorPane.rightAnchor="3.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="503.0" layoutY="294.0" prefHeight="34.0" prefWidth="493.0" style="-fx-border-color: gray; -fx-background-color: #f2f2f2;" text="Course Registered" AnchorPane.rightAnchor="3.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Button alignment="CENTER" defaultButton="true" layoutX="62.0" layoutY="543.0" mnemonicParsing="false" onAction="#handle_StudentInfo" prefWidth="220.0" stylesheets="@../CSS/smallButtonscss.css" text="Student Information">
+         <font>
+            <Font name="Times New Roman" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

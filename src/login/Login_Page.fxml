@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" fx:id="main_anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="870.0" prefWidth="1600.0" style="-fx-background-color: lightgray;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.Login_Page">
+   <children>
+      <ImageView fitHeight="513.0" fitWidth="600.0" layoutX="154.0" layoutY="219.0">
+         <image>
+            <Image url="@../iiui_logo12%20-%20Copy.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane fx:id="anchorPane" layoutX="1001.0" layoutY="102.0" onMouseEntered="#anchorPaneMouseEntered" onMouseExited="#anchorPaneMouseExited" prefHeight="641.0" prefWidth="411.0" style="-fx-background-color: lightblue; -fx-border-color: black;" stylesheets="@../CSS/fxml.css" AnchorPane.bottomAnchor="107.0" AnchorPane.rightAnchor="168.0" AnchorPane.topAnchor="102.0">
+         <children>
+            <TextField fx:id="username" layoutX="86.0" layoutY="294.0" onKeyPressed="#handle_usernameKeyPressed" prefHeight="35.0" prefWidth="250.0" promptText="Enter username">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="password" layoutX="87.0" layoutY="354.0" onKeyPressed="#handle_passwordKeyPressed" prefHeight="35.0" prefWidth="250.0" promptText="Enter password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </PasswordField>
+            <Button alignment="CENTER" defaultButton="true" layoutX="88.0" layoutY="489.0" mnemonicParsing="false" onAction="#handle_loginBtn" prefHeight="35.0" prefWidth="250.0" text="Login" textFill="WHITE">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Button>
+            <Hyperlink layoutX="154.0" layoutY="456.0" onAction="#handle_forgot_pass" text="Forgot password?" />
+            <Hyperlink layoutX="149.0" layoutY="541.0" onAction="#handle_signup" text="No account? Signup" />
+            <Hyperlink layoutX="197.0" layoutY="595.0" onAction="#handle_help" text="Help?" />
+            <CheckBox fx:id="show_pass" layoutX="86.0" layoutY="399.0" mnemonicParsing="false" onAction="#handle_show_pass" text="Show password?">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </CheckBox>
+            <Label fx:id="label" alignment="CENTER" layoutX="88.0" layoutY="426.0" prefHeight="22.0" prefWidth="256.0" textFill="#ff1616" />
+           <RadioButton fx:id="login_asAdmin" layoutX="133.0" layoutY="244.0" mnemonicParsing="false" text="Login as Admin?" />
+            <FontAwesomeIconView glyphName="USERS" layoutX="140.0" layoutY="196.0" size="10em" />
+            <Label alignment="CENTER" layoutX="151.0" layoutY="24.0" text="Sign in" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="Times New Roman" size="48.0" />
+               </font>
+            </Label>
+            </children>
+      </AnchorPane>
+      <Text fontSmoothingType="LCD" layoutX="114.0" layoutY="132.0" strokeType="OUTSIDE" strokeWidth="0.0" text="International Islamic University">
+         <font>
+            <Font name="Times New Roman Bold" size="48.0" />
+         </font>
+      </Text>
+      <Text fontSmoothingType="LCD" layoutX="376.578125" layoutY="186.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Islamabad" textAlignment="CENTER">
+         <font>
+            <Font name="Times New Roman Bold" size="48.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

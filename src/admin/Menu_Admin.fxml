@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="admin_anchorPane" prefHeight="870.0" prefWidth="1420.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="admin.Menu_Admin">
+   <children>
+      <TabPane layoutX="179.0" layoutY="68.0" prefHeight="827.0" prefWidth="1420.0" style="-fx-background-color: #666666;" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Teacher        ">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: lightgray;">
+                     <children>
+                        <Button defaultButton="true" layoutX="1328.0" layoutY="45.0" mnemonicParsing="false" onAction="#T_searchBtn" stylesheets="@../CSS/smallButtonscss.css" text="Search">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="T_searchTxt" layoutX="1137.0" layoutY="45.0" onKeyPressed="#handle_T_searchTxt_EnterPressed" promptText="Enter id or cnic">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </TextField>
+                        <Button defaultButton="true" layoutX="1023.0" layoutY="45.0" mnemonicParsing="false" onAction="#T_delete" stylesheets="@../CSS/smallButtonscss.css" text="Delete">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="T_deleteTxt" layoutX="832.0" layoutY="45.0" onKeyPressed="#handle_T_DeleteTxt_EnterePressed" promptText="Enter id or cnic">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </TextField>
+                        <Label alignment="CENTER" layoutX="3.0" layoutY="3.0" prefHeight="48.0" prefWidth="1255.0" text="Teacher Record" AnchorPane.leftAnchor="1.0">
+                           <font>
+                              <Font name="Times New Roman Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="T_tableView" layoutX="38.0" layoutY="79.0" prefHeight="680.0" prefWidth="1349.0" tableMenuButtonVisible="true">
+                           <columns>
+                              <TableColumn fx:id="T_sNo" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" text="S.No" />
+                              <TableColumn fx:id="T_id" maxWidth="300.0" minWidth="90.0" prefWidth="90.0" text="ID" />
+                              <TableColumn fx:id="T_name" maxWidth="1000.0" minWidth="250.0" prefWidth="250.0" text="Name" />
+                              <TableColumn fx:id="T_father" maxWidth="1000.0" minWidth="250.0" prefWidth="250.0" text="Father Name" />
+                              <TableColumn fx:id="T_gender" maxWidth="200.0" minWidth="150.0" prefWidth="150.0" text="Gender" />
+                              <TableColumn fx:id="T_age" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" text="Age" />
+                              <TableColumn fx:id="T_cnic" maxWidth="300.0" minWidth="200.0" prefWidth="200.0" text="CNIC" />
+                              <TableColumn fx:id="T_bachlar" maxWidth="1000.0" minWidth="200.0" prefWidth="200.0" text="Bachlar Degree" />
+                              <TableColumn fx:id="T_master" maxWidth="1000.0" minWidth="200.0" prefWidth="200.0" text="Master Degree" />
+                              <TableColumn fx:id="T_phd" maxWidth="1000.0" minWidth="200.0" prefWidth="200.0" text="PHD Degree" />
+                              <TableColumn fx:id="T_extra_qualfication1" minWidth="250.0" prefWidth="250.0" text="Extra Qualification 1" />
+                              <TableColumn fx:id="T_extra_qualfication2" minWidth="250.0" prefWidth="250.0" text="Extra Qualification 2" />
+                              <TableColumn fx:id="T_teaching_sub1" maxWidth="2000.0" minWidth="250.0" prefWidth="250.0" text="Teaching Subject 1" />
+                              <TableColumn fx:id="T_teaching_sub2" maxWidth="2000.0" minWidth="250.0" prefWidth="250.0" text="Teaching Subject 2" />
+                              <TableColumn fx:id="T_teaching_sub3" maxWidth="2000.0" minWidth="250.0" prefWidth="250.0" text="Teaching Subject 3" />
+                              <TableColumn fx:id="T_teaching_sub4" maxWidth="2000.0" minWidth="250.0" prefWidth="250.0" text="Teaching Subject 4" />
+                              <TableColumn fx:id="T_teaching_sub5" maxWidth="2000.0" minWidth="250.0" prefWidth="250.0" text="Teaching Subject 5" />
+                              <TableColumn fx:id="T_date" maxWidth="250.0" minWidth="200.0" prefWidth="200.0" text="Date" />
+                              <TableColumn fx:id="T_contact" maxWidth="300.0" minWidth="200.0" prefWidth="200.0" text="Contact Number" />
+                              <TableColumn fx:id="T_cur_addresss" minWidth="300.0" prefWidth="300.0" text="Current Address" />
+                              <TableColumn fx:id="T_per_address" minWidth="300.0" prefWidth="300.0" text="Permanent Address" />
+                           </columns>
+                        </TableView>
+                        <Button defaultButton="true" layoutX="38.0" layoutY="45.0" mnemonicParsing="false" onAction="#T_goBackToList" stylesheets="@../CSS/smallButtonscss.css" text="Go back to list">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Student        ">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: lightgray;">
+                     <children>
+                        <Button defaultButton="true" layoutX="1023.0" layoutY="45.0" mnemonicParsing="false" onAction="#S_delete" stylesheets="@../CSS/smallButtonscss.css" text="Delete">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font></Button>
+                        <Button defaultButton="true" layoutX="1328.0" layoutY="45.0" mnemonicParsing="false" onAction="#S_search" stylesheets="@../CSS/smallButtonscss.css" text="Search">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="S_search" layoutX="1137.0" layoutY="45.0" onKeyPressed="#handle_S_searchEnterPressed" promptText="Enter reg number">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </TextField>
+                        <Label alignment="CENTER" layoutX="3.0" layoutY="3.0" prefHeight="48.0" prefWidth="1255.0" text="Student Record" AnchorPane.leftAnchor="0.0">
+                           <font>
+                              <Font name="Times New Roman Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <TableView fx:id="S_tableView" layoutX="38.0" layoutY="79.0" prefHeight="680.0" prefWidth="1349.0" tableMenuButtonVisible="true">
+                           <columns>
+                              <TableColumn fx:id="S_sNO" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" text="S.No" />
+                              <TableColumn fx:id="S_regNo" minWidth="250.0" prefWidth="250.0" text="Reg#" />
+                              <TableColumn fx:id="S_name" minWidth="250.0" prefWidth="250.0" text="Name" />
+                              <TableColumn fx:id="S_fName" minWidth="250.0" prefWidth="250.0" text="Father Name" />
+                              <TableColumn fx:id="S_dob" minWidth="200.0" prefWidth="200.0" text="DOB" />
+                              <TableColumn fx:id="S_gender" minWidth="150.0" prefWidth="150.0" text="Gender" />
+                              <TableColumn fx:id="S_cnic" minWidth="200.0" prefWidth="200.0" text="CNIC" />
+                              <TableColumn fx:id="S_batch" minWidth="150.0" prefWidth="150.0" text="Batch Year" />
+                              <TableColumn fx:id="S_session" minWidth="150.0" prefWidth="150.0" text="Session" />
+                              <TableColumn fx:id="S_degreeProg" minWidth="200.0" prefWidth="200.0" text="Degree Prog" />
+                              <TableColumn fx:id="S_degreeYear" minWidth="150.0" prefWidth="150.0" text="Degree Year" />
+                              <TableColumn fx:id="S_date" minWidth="200.0" prefWidth="200.0" text="Date Addmision" />
+                              <TableColumn fx:id="S_contact" minWidth="200.0" prefWidth="200.0" text="Contact" />
+                              <TableColumn fx:id="S_Father_contact" minWidth="200.0" prefWidth="200.0" text="Father Contact" />
+                              <TableColumn fx:id="S_email" minWidth="250.0" prefWidth="250.0" text="Email" />
+                              <TableColumn fx:id="S_domicile" minWidth="150.0" prefWidth="150.0" text="Domicile" />
+                              <TableColumn fx:id="S_cur_Address" minWidth="300.0" prefWidth="300.0" text="Current Address" />
+                              <TableColumn fx:id="S_per_Address" minWidth="300.0" prefWidth="300.0" text="Permanent Address" />
+                           </columns>
+                        </TableView>
+                        <TextField fx:id="S_delete" layoutX="832.0" layoutY="45.0" onKeyPressed="#handle_S_delete_EnterPressed" promptText="Enter reg number">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </TextField>
+                        <Button defaultButton="true" layoutX="38.0" layoutY="45.0" mnemonicParsing="false" onAction="#S_goBackToList" stylesheets="@../CSS/smallButtonscss.css" text="Go back to list">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Button>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Course         ">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: lightgray;">
+                     <children>
+                        <Button defaultButton="true" layoutX="1328.0" layoutY="45.0" mnemonicParsing="false" onAction="#C_search" stylesheets="@../CSS/smallButtonscss.css" text="Search">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="C_search" layoutX="1137.0" layoutY="45.0" onKeyPressed="#handle_C_search_EnterPressed" promptText="Enter course code">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </TextField>
+                        <TableView fx:id="C_tableView" layoutX="38.0" layoutY="79.0" prefHeight="680.0" prefWidth="1349.0" tableMenuButtonVisible="true">
+                           <columns>
+                              <TableColumn fx:id="C_sNo" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" text="S.No" />
+                              <TableColumn fx:id="C_code" prefWidth="152.3333282470703" text="Course Code" />
+                              <TableColumn fx:id="C_name" prefWidth="875.6666717529297" text="Course Name" />
+                              <TableColumn fx:id="C_creditHrs" prefWidth="191.6666717529297" text="Credit Hours" />
+                           </columns>
+                        </TableView>
+                        <Button defaultButton="true" layoutX="1023.0" layoutY="45.0" mnemonicParsing="false" onAction="#C_delete" stylesheets="@../CSS/smallButtonscss.css" text="Delete">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="C_Delete" layoutX="832.0" layoutY="45.0" onKeyPressed="#handle_C_delete_EnterPressed" promptText="Enter course code">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </TextField>
+                        <Label alignment="CENTER" layoutX="1.0" layoutY="3.0" prefHeight="48.0" prefWidth="1255.0" text="Courses Record" AnchorPane.leftAnchor="0.0">
+                           <font>
+                              <Font name="Times New Roman Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <Button defaultButton="true" layoutX="38.0" layoutY="45.0" mnemonicParsing="false" onAction="#C_goBackToList" stylesheets="@../CSS/smallButtonscss.css" text="Go back to list">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Button>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Course Registered">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: lightgray;">
+                     <children>
+                        <TableView fx:id="R_tableView" accessibleRole="DATE_PICKER" layoutX="38.0" layoutY="79.0" prefHeight="680.0" prefWidth="1349.0" tableMenuButtonVisible="true">
+                          <columns>
+                            <TableColumn fx:id="R_sNo" maxWidth="40.0" minWidth="40.0" prefWidth="40.0" text="S.No" />
+                            <TableColumn fx:id="R_regNo" maxWidth="1000.0" minWidth="250.0" prefWidth="250.0" text="Reg No" />
+                              <TableColumn fx:id="R_name" maxWidth="1000.0" minWidth="250.0" prefWidth="250.0" text="Name" />
+                              <TableColumn fx:id="R_session" maxWidth="300.0" minWidth="180.0" prefWidth="180.0" text="Session" />
+                              <TableColumn fx:id="R_semester" maxWidth="1000.0" minWidth="180.0" prefWidth="180.0" text="Semester" />
+                              <TableColumn fx:id="R_batch" maxWidth="300.0" minWidth="180.0" prefWidth="180.0" text="Batch" />
+                              <TableColumn fx:id="R_degreeProg" maxWidth="300.0" minWidth="200.0" prefWidth="200.0" text="Program" />
+                              <TableColumn fx:id="R_date" maxWidth="300.0" minWidth="200.0" prefWidth="200.0" text="Date" />
+                              <TableColumn fx:id="R_contact" maxWidth="300.0" minWidth="200.0" prefWidth="200.0" text="Contact" />
+                              <TableColumn fx:id="R_father_contact" minWidth="200.0" prefWidth="200.0" text="Father Contact" />
+                              <TableColumn fx:id="R_cur_address" minWidth="160.0" prefWidth="160.0" text="Current Address" />
+                              <TableColumn fx:id="R_Ccode1" minWidth="160.0" prefWidth="160.0" text="Course1 Code" />
+                              <TableColumn fx:id="R_Cname1" minWidth="300.0" prefWidth="300.0" text="Course1 Name" />
+                              <TableColumn fx:id="R_CcreditHrs1" minWidth="160.0" prefWidth="160.0" text="Course1 CreditHrs" />
+                              <TableColumn fx:id="R_Ccode2" minWidth="160.0" prefWidth="160.0" text="Course2 Code" />
+                              <TableColumn fx:id="R_Cname2" minWidth="300.0" prefWidth="300.0" text="Course2 Name" />
+                              <TableColumn fx:id="R_CcreditHrs2" minWidth="160.0" prefWidth="160.0" text="Course2 CreditHrs" />
+                              <TableColumn fx:id="R_Ccode3" minWidth="160.0" prefWidth="160.0" text="Course3 Code" />
+                              <TableColumn fx:id="R_Cname3" minWidth="300.0" prefWidth="300.0" text="Course3 Name" />
+                              <TableColumn fx:id="R_CcreditHrs3" minWidth="160.0" prefWidth="160.0" text="Course3 CreditHrs" />
+                              <TableColumn fx:id="R_Ccode4" minWidth="160.0" prefWidth="160.0" text="Course4 Code" />
+                              <TableColumn fx:id="R_Cname4" minWidth="300.0" prefWidth="300.0" text="Course4 Name" />
+                              <TableColumn fx:id="R_CcreditHrs4" minWidth="160.0" prefWidth="160.0" text="Course4 CreditHrs" />
+                              <TableColumn fx:id="R_Ccode5" minWidth="160.0" prefWidth="160.0" text="Course5 Code" />
+                              <TableColumn fx:id="R_Cname5" minWidth="300.0" prefWidth="300.0" text="Course5 Name" />
+                              <TableColumn fx:id="R_CcreditHrs5" minWidth="160.0" prefWidth="160.0" text="Course5 CreditHrs" />
+                              <TableColumn fx:id="R_Ccode6" minWidth="160.0" prefWidth="160.0" text="Course6 Code" />
+                              <TableColumn fx:id="R_Cname6" minWidth="300.0" prefWidth="300.0" text="Course6 Name" />
+                              <TableColumn fx:id="R_CcreditHrs6" minWidth="160.0" prefWidth="160.0" text="Course6 CreditHrs" />
+                              <TableColumn fx:id="R_Ccode7" minWidth="160.0" prefWidth="160.0" text="Course7 Code" />
+                              <TableColumn fx:id="R_Cname7" minWidth="300.0" prefWidth="300.0" text="Course7 Name" />
+                              <TableColumn fx:id="R_CcreditHrs7" minWidth="160.0" prefWidth="160.0" text="Course7 CreditHrs" />
+                          </columns>
+                        </TableView>
+                        <Label alignment="CENTER" layoutX="3.0" layoutY="3.0" prefHeight="48.0" prefWidth="1255.0" text="Course Registered" AnchorPane.leftAnchor="0.0">
+                           <font>
+                              <Font name="Times New Roman Bold" size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="CR_search" layoutX="1137.0" layoutY="45.0" onKeyPressed="#handle_CR_search_EnterPressed" promptText="Enter reg number">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font></TextField>
+                        <Button defaultButton="true" layoutX="1328.0" layoutY="45.0" mnemonicParsing="false" onAction="#CR_search" stylesheets="@../CSS/smallButtonscss.css" text="Search">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font></Button>
+                        <TextField fx:id="CR_delete" layoutX="825.0" layoutY="45.0" onKeyPressed="#handle_CR_delete_EnterPressed" prefHeight="28.0" prefWidth="131.0" promptText="Enter reg number">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </TextField>
+                        <Button defaultButton="true" layoutX="1023.0" layoutY="45.0" mnemonicParsing="false" onAction="#CR_delete" stylesheets="@../CSS/smallButtonscss.css" text="Delete">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Button>
+                        <Button defaultButton="true" layoutX="38.0" layoutY="45.0" mnemonicParsing="false" onAction="#CR_goBackToList" stylesheets="@../CSS/smallButtonscss.css" text="Go back to list">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Button>
+                        <TextField fx:id="CR_Smstr_delete" layoutX="956.0" layoutY="45.0" onKeyPressed="#handle_CR_search_EnterPressed" prefHeight="28.0" prefWidth="64.0" promptText="Semester">
+                           <font>
+                              <Font name="Times New Roman" size="15.0" />
+                           </font>
+                        </TextField>
+                     </children></AnchorPane>
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

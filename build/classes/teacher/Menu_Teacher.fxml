@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="870.0" prefWidth="1420.0" style="-fx-background-color: lightgray;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="teacher.Menu_Teacher">
+   <children>
+      <Button alignment="CENTER" defaultButton="true" layoutX="350.0" layoutY="200.0" mnemonicParsing="false" onAction="#add_new_teacher" prefHeight="125.0" prefWidth="300.0" stylesheets="@../CSS/menuButtons.css" text="         Add Teacher" textAlignment="CENTER" textFill="#0a0000">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="USER_PLUS" size="3em" />
+         </graphic>
+      </Button>
+      <Button alignment="CENTER" defaultButton="true" layoutX="690.0" layoutY="200.0" mnemonicParsing="false" onAction="#show_techer_list" prefHeight="125.0" prefWidth="300.0" stylesheets="@../CSS/menuButtons.css" text="       Show Teachers" textAlignment="CENTER" textFill="#0a0000">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="LIST_ALT" size="3em" />
+         </graphic>
+      </Button>
+      <Button alignment="CENTER" defaultButton="true" layoutX="350.0" layoutY="360.0" mnemonicParsing="false" onAction="#search_teacher_data" prefHeight="125.0" prefWidth="300.0" stylesheets="@../CSS/menuButtons.css" text="        Search Teacher" textAlignment="CENTER" textFill="#0a0000">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="EDIT" size="3em" />
+         </graphic>
+      </Button>
+      <Button alignment="CENTER" defaultButton="true" layoutX="690.0" layoutY="360.0" mnemonicParsing="false" onAction="#edit_teacher_data" prefHeight="125.0" prefWidth="300.0" stylesheets="@../CSS/menuButtons.css" text="       Update Teacher" textAlignment="CENTER" textFill="#0a0000">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="EDIT" size="3em" />
+         </graphic>
+      </Button>
+      <Button alignment="CENTER" defaultButton="true" layoutX="350.0" layoutY="520.0" mnemonicParsing="false" prefHeight="125.0" prefWidth="300.0" stylesheets="@../CSS/menuButtons.css" textAlignment="CENTER" textFill="#0a0000">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="EDIT" size="3em" />
+         </graphic>
+      </Button>
+      <Button alignment="CENTER" defaultButton="true" layoutX="690.0" layoutY="520.0" mnemonicParsing="false" prefHeight="125.0" prefWidth="300.0" stylesheets="@../CSS/menuButtons.css" text=" " textAlignment="CENTER" textFill="#0a0000">
+         <font>
+            <Font name="Times New Roman Bold" size="18.0" />
+         </font>
+         <graphic>
+            <FontAwesomeIconView glyphName="EDIT" size="3em" />
+         </graphic>
+      </Button>
+      <Label alignment="CENTER" layoutX="668.0" layoutY="76.0" text="Teacher Menu" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="75.0">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

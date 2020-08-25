@@ -1,0 +1,16 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+/*.table-row-cell {
+    -fx-cell-size: 20px;    
+}*/
+.table-view .table-column{
+    -fx-alignment:center;
+}
+.table-view .table-cell{
+    -fx-font-size:12px;
+}

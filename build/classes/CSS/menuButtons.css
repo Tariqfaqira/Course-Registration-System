@@ -1,0 +1,21 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.button:hover{
+    -fx-cursor: hand;
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+    -fx-background-radius: 10;
+    -fx-font-weight: bold;
+}
+.button{
+    -fx-background-radius: 10;
+}
+
+.button:active{
+    -fx-background-color: red;
+}

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="870.0" prefWidth="1420.0" style="-fx-background-color: lightgray;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="teacher.AddNewTeacher">
+   <children>
+      <AnchorPane layoutX="155.0" layoutY="147.0" prefHeight="595.0" prefWidth="1050.0" style="-fx-border-color: gray; -fx-background-color: white;">
+         <children>
+            <TextField fx:id="id" editable="false" layoutX="240.0" layoutY="80.0">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font></TextField>
+            <TextField fx:id="date" layoutX="805.0" layoutY="80.0">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font></TextField>
+            <TextField fx:id="name" layoutX="240.0" layoutY="123.0">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font></TextField>
+            <TextField fx:id="fName" layoutX="805.0" layoutY="123.0">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font></TextField>
+            <TextField fx:id="cnic" layoutX="240.0" layoutY="166.0">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font></TextField>
+            <TextField fx:id="gender" layoutX="805.0" layoutY="166.0">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font></TextField>
+            <TextField fx:id="contactNo" layoutX="240.0" layoutY="209.0">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font></TextField>
+            <TextField fx:id="aage" layoutX="805.0" layoutY="209.0">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font></TextField>
+            <TextField fx:id="cur_address" layoutX="240.0" layoutY="262.0" prefWidth="742.0">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font></TextField>
+            <TextField fx:id="per_address" layoutX="240.0" layoutY="302.0" prefWidth="742.0">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font></TextField>
+            <Label layoutX="65.0" layoutY="166.0" text="CNIC::">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="630.0" layoutY="166.0" text="Gender:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="262.0" text="Curent Address:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="209.0" text="Contact Number:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="607.0" layoutY="95.0">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="630.0" layoutY="209.0" text="Age:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="50.0" layoutY="10.0" prefHeight="46.0" prefWidth="768.0" text="Personal Information" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="Times New Roman" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="302.0" text="Permanent Address:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="80.0" text="ID:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="630.0" layoutY="123.0" text="Father Name:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="123.0" text="Name:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="630.0" layoutY="80.0" text="Date:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <AnchorPane layoutX="65.0" layoutY="342.0" prefHeight="230.0" prefWidth="917.0" style="-fx-border-color: gray;">
+               <children>
+                  <AnchorPane layoutX="20.0" layoutY="15.0" prefHeight="200.0" prefWidth="280.0" style="-fx-border-color: gray;">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="35.0" prefWidth="261.0" text="Degree Information">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="60.0" text="Bachlar in:">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="bachlar" layoutX="90.0" layoutY="60.0">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="10.0" layoutY="105.0" text="Master in:">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="master" layoutX="90.0" layoutY="105.0">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="10.0" layoutY="150.0" text="PHD in:">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="extra_colification1" layoutX="90.0" layoutY="150.0">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="314.0" layoutY="15.0" prefHeight="200.0" prefWidth="280.0" style="-fx-border-color: gray;">
+                     <children>
+                        <Label alignment="CENTER" layoutX="9.0" prefHeight="35.0" prefWidth="275.0" text="Extra Qualification">
+                           <font>
+                              <Font name="Times New Roman" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="16.0" layoutY="60.0" text="(1).">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="phd" layoutX="76.0" layoutY="60.0">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="16.0" layoutY="112.0" text="(2).">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="extra_colification2" layoutX="76.0" layoutY="105.0">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="17.0" layoutY="150.0" text="(3).">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="extra_colification21" layoutX="77.0" layoutY="150.0">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="615.0" layoutY="15.0" prefHeight="200.0" prefWidth="280.0" style="-fx-border-color: gray;">
+                     <children>
+                        <Label layoutX="26.0" layoutY="22.0" text="(1).">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="teaching_subject1" layoutX="67.0" layoutY="16.0" promptText="Enter Teaching subject">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="26.0" layoutY="58.0" text="(2).">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="teaching_subject2" layoutX="67.0" layoutY="52.0" promptText="Enter Teaching subject">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="26.0" layoutY="94.0" text="(3).">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="teaching_subject3" layoutX="67.0" layoutY="88.0" promptText="Enter Teaching subject">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="26.0" layoutY="130.0" text="(4).">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="teaching_subject4" layoutX="67.0" layoutY="124.0" promptText="Enter Teaching subject">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </TextField>
+                        <Label layoutX="26.0" layoutY="166.0" text="(5).">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="teaching_subject5" layoutX="67.0" layoutY="160.0" promptText="Enter Teaching subject">
+                           <font>
+                              <Font name="Times New Roman" size="14.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="155.0" layoutY="750.0" prefHeight="49.0" prefWidth="1050.0" style="-fx-border-color: gray; -fx-background-color: white;">
+         <children>
+            <Button fx:id="saveBtn" defaultButton="true" layoutX="100.0" layoutY="11.0" mnemonicParsing="false" onAction="#handle_saveBtn" prefWidth="200.0" stylesheets="@../CSS/smallButtonscss.css" text="Save">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Button>
+            <Button defaultButton="true" layoutX="752.0" layoutY="11.0" mnemonicParsing="false" onAction="#handle_cancleBtn" prefWidth="200.0" stylesheets="@../CSS/smallButtonscss.css" text="Cancel">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutY="20.0" prefHeight="64.0" prefWidth="1374.0" text="Add New Teacher" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="20.0">
+         <font>
+            <Font name="Times New Roman" size="36.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="8.0" layoutY="75.0" prefHeight="52.0" prefWidth="1374.0" text="Bachelor of Science:          Add Teacher Form" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="20.0">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="95.0" layoutY="48.0" prefHeight="50.0" prefWidth="241.0" />
+   </children>
+</AnchorPane>

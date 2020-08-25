@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="870.0" prefWidth="1420.0" style="-fx-background-color: lightgray;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="course.EditCourse">
+   <children>
+      <Label alignment="CENTER" layoutX="10.0" layoutY="30.0" prefHeight="64.0" prefWidth="1374.0" text="Update Courses">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="18.0" layoutY="85.0" prefHeight="52.0" prefWidth="1374.0" text="Bachelor of Science:           UpdateCourses Form">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="anchorPane_hide_main" layoutX="155.0" layoutY="147.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="599.0" prefWidth="1050.0" style="-fx-background-color: white; -fx-border-color: gray;" visible="false">
+         <children>
+            <AnchorPane layoutX="271.0" layoutY="163.0" prefHeight="282.0" prefWidth="486.0" style="-fx-border-color: gray;">
+               <children>
+                  <TextField fx:id="code" layoutX="228.0" layoutY="66.0" onKeyPressed="#handleEnterPressed_AllTxtFields" promptText="Enter course code">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="79.0" layoutY="70.0" text="Course Code:">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="name" layoutX="228.0" layoutY="122.0" onKeyPressed="#handleEnterPressed_AllTxtFields" promptText="Enter course name">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="79.0" layoutY="126.0" text="Course Name:">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="creditHrs" layoutX="228.0" layoutY="179.0" onKeyPressed="#handleEnterPressed_AllTxtFields" promptText="Enter course credit hours">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="79.0" layoutY="183.0" text="Credit Hours:">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="anchorPane_hide_Btns" layoutX="155.0" layoutY="750.0" prefHeight="49.0" prefWidth="1050.0" style="-fx-background-color: white; -fx-border-color: gray;" visible="false">
+         <children>
+            <Button alignment="CENTER" defaultButton="true" layoutX="100.0" layoutY="11.0" mnemonicParsing="false" onAction="#handle_updateBtn" prefWidth="200.0" stylesheets="@../CSS/smallButtonscss.css" text="Update">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" defaultButton="true" layoutX="752.0" layoutY="11.0" mnemonicParsing="false" onAction="#handle_cancleBtn" prefWidth="200.0" stylesheets="@../CSS/smallButtonscss.css" text="Cancel">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="find_anchorPane" layoutX="447.0" layoutY="267.0" prefHeight="235.0" prefWidth="522.0" style="-fx-background-color: white;">
+         <children>
+            <TextField fx:id="findCode" layoutX="135.0" layoutY="119.0" onKeyPressed="#handle_findEnter_pressed" promptText="Enter course code" />
+            <Button defaultButton="true" layoutX="330.0" layoutY="119.0" mnemonicParsing="false" onAction="#handle_findRegInDB" stylesheets="@../CSS/smallButtonscss.css" text="Find">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutY="35.0" text="Enter Reg Number To Update Student Data" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button defaultButton="true" layoutX="225.0" layoutY="182.0" mnemonicParsing="false" onAction="#handle_findCancle" stylesheets="@../CSS/smallButtonscss.css" text="Cancel">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

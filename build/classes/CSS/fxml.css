@@ -1,0 +1,33 @@
+
+.mainFxmlClass {
+
+}
+/*Main Menu uttons*/
+.button:hover{
+    -fx-background-color: gray;
+    -fx-border-color: black;
+    -fx-border-width: 3;
+    -fx-border-radius: 30;
+    -fx-background-radius: 30;
+    -fx-text-fill: whitesmoke;
+}
+.button{
+    -fx-background-color: white;
+    -fx-background-radius: 30;
+    -fx-text-fill: black;
+}
+.button .glyph-icon:hover{
+    -fx-fill: white;
+}
+.glyph-icon:hover{
+    -fx-fill:  white;
+    -fx-border-color: black;
+    -fx-border-width: 3;
+}
+.checkBox:hover{
+    -fx-cursor: hand;
+}
+
+.listView:hover{
+    -fx-cursor: hand;
+}

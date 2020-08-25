@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="anchorPane" prefHeight="870.0" prefWidth="1420.0" style="-fx-background-color: lightgray;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="student.ShowCourseRegistered">
+   <children>
+      <Button defaultButton="true" layoutX="38.0" layoutY="80.0" mnemonicParsing="false" onAction="#goBack" stylesheets="@../CSS/smallButtonscss.css" text="Go Back">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Button>
+      <TableView fx:id="CR_tableView" layoutX="38.0" layoutY="110.0" prefHeight="680.0" prefWidth="1339.0" tableMenuButtonVisible="true">
+         <columns>
+            <TableColumn fx:id="CR_sNo" minWidth="50.0" prefWidth="50.0" text="S.No" />
+            <TableColumn fx:id="CR_regNo" minWidth="250.0" prefWidth="250.0" text="Reg No" />
+            <TableColumn fx:id="CR_name" minWidth="250.0" prefWidth="250.0" text="Name" />
+            <TableColumn fx:id="CR_session" minWidth="150.0" prefWidth="150.0" text="Session" />
+            <TableColumn fx:id="CR_semester" minWidth="150.0" prefWidth="150.0" text="Semester" />
+            <TableColumn fx:id="CR_batch" minWidth="150.0" prefWidth="150.0" text="Batch" />
+            <TableColumn fx:id="CR_degreeProg" minWidth="200.0" prefWidth="200.0" text="Program" />
+            <TableColumn fx:id="CR_date" minWidth="200.0" prefWidth="200.0" text="Date" />
+            <TableColumn fx:id="CR_contact" minWidth="200.0" prefWidth="95.33331298828125" text="Contact" />
+            <TableColumn fx:id="CR_father_contact" minWidth="200.0" prefWidth="200.0" text="Father Contact" />
+            <TableColumn fx:id="CR_cur_address" minWidth="300.0" prefWidth="300.0" text="Current Address" />
+            <TableColumn fx:id="CR_Ccode1" minWidth="200.0" prefWidth="200.0" text="Course1 Code" />
+            <TableColumn fx:id="CR_Cname1" minWidth="300.0" prefWidth="300.0" text="Course1 Name" />
+            <TableColumn fx:id="CR_CcreditHrs1" minWidth="150.0" prefWidth="150.0" text="Course1 CreditHrs" />
+            <TableColumn fx:id="CR_Ccode2" minWidth="200.0" prefWidth="200.0" text="Course2 Code" />
+            <TableColumn fx:id="CR_Cname2" minWidth="300.0" prefWidth="300.0" text="Course2 Name" />
+            <TableColumn fx:id="CR_CcreditHrs2" minWidth="150.0" prefWidth="150.0" text="Course2 CreditHrs" />
+            <TableColumn fx:id="CR_Ccode3" minWidth="200.0" prefWidth="200.0" text="Course3 Code" />
+            <TableColumn fx:id="CR_Cname3" minWidth="300.0" prefWidth="300.0" text="Course3 Name" />
+            <TableColumn fx:id="CR_CcreditHrs3" minWidth="150.0" prefWidth="150.0" text="Course3 CreditHrs" />
+            <TableColumn fx:id="CR_Ccode4" minWidth="200.0" prefWidth="200.0" text="Course4 Code" />
+            <TableColumn fx:id="CR_Cname4" minWidth="300.0" prefWidth="300.0" text="Course4 Name" />
+            <TableColumn fx:id="CR_CcreditHrs4" minWidth="150.0" prefWidth="150.0" text="Course4 CreditHrs" />
+            <TableColumn fx:id="CR_Ccode5" minWidth="200.0" prefWidth="200.0" text="Course5 Code" />
+            <TableColumn fx:id="CR_Cname5" minWidth="300.0" prefWidth="300.0" text="Course5 Name" />
+            <TableColumn fx:id="CR_CcreditHrs5" minWidth="150.0" prefWidth="150.0" text="Course5 CreditHrs" />
+            <TableColumn fx:id="CR_Ccode6" minWidth="200.0" prefWidth="200.0" text="Course6 Code" />
+            <TableColumn fx:id="CR_Cname6" minWidth="300.0" prefWidth="300.0" text="Course6 Name" />
+            <TableColumn fx:id="CR_CcreditHrs6" minWidth="150.0" prefWidth="150.0" text="Course6 CreditHrs" />
+            <TableColumn fx:id="CR_Ccode7" minWidth="200.0" prefWidth="200.0" text="Course7 Code" />
+            <TableColumn fx:id="CR_Cname7" minWidth="300.0" prefWidth="300.0" text="Course7 Name" />
+            <TableColumn fx:id="CR_CcreditHrs7" minWidth="150.0" prefWidth="150.0" text="Course7 CreditHrs" />
+         </columns>
+      </TableView>
+      <Label alignment="CENTER" layoutY="20.0" text="Course Registered" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="20.0">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

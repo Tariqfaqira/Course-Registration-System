@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="870.0" prefWidth="1420.0" style="-fx-background-color: lightgray;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="teacher.ShowTeacherList">
+   <children>
+      <Label alignment="CENTER" layoutY="20.0" text="Teacher List" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="20.0">
+         <font>
+            <Font name="Times New Roman Bold" size="24.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tableView" layoutX="38.0" layoutY="110.0" prefHeight="680.0" prefWidth="1339.0" tableMenuButtonVisible="true">
+         <columns>
+            <TableColumn fx:id="T_sNo" minWidth="0.0" prefWidth="0.0" text="S.No" />
+            <TableColumn fx:id="T_id" prefWidth="67.33333587646484" text="ID" />
+            <TableColumn fx:id="T_name" prefWidth="128.00001525878906" text="Name" />
+            <TableColumn fx:id="T_father" prefWidth="151.66665649414062" text="Father Name" />
+            <TableColumn fx:id="T_gender" prefWidth="62.333343505859375" text="Gender" />
+            <TableColumn fx:id="T_age" prefWidth="43.0" text="Age" />
+            <TableColumn fx:id="T_cnic" prefWidth="87.0" text="CNIC" />
+            <TableColumn fx:id="T_bachlar" prefWidth="101.0" text="Bachlar Degree" />
+            <TableColumn fx:id="T_master" prefWidth="77.6666259765625" text="Master Degree" />
+            <TableColumn fx:id="T_phd" prefWidth="72.33331298828125" text="PHD Degree" />
+            <TableColumn fx:id="T_extra_qualfication1" prefWidth="55.33331298828125" text="Extra Qualification 1" />
+            <TableColumn fx:id="T_extra_qualfication2" minWidth="0.0" prefWidth="66.3333740234375" text="Extra Qualification 2" />
+            <TableColumn fx:id="T_teaching_sub1" minWidth="0.0" prefWidth="28.6666259765625" text="Teaching Subject 1" />
+            <TableColumn fx:id="T_teaching_sub2" minWidth="0.0" prefWidth="52.0" text="Teaching Subject 2" />
+            <TableColumn fx:id="T_teaching_sub3" prefWidth="96.6666259765625" text="Teaching Subject 3" />
+            <TableColumn fx:id="T_teaching_sub4" prefWidth="96.0" text="Teaching Subject 4" />
+            <TableColumn fx:id="T_teaching_sub5" prefWidth="119.0" text="Teaching Subject 5" />
+            <TableColumn fx:id="T_date" prefWidth="75.0" text="Date" />
+            <TableColumn fx:id="T_contact" prefWidth="75.0" text="Contact Number" />
+            <TableColumn fx:id="T_cur_addresss" prefWidth="75.0" text="Current Address" />
+            <TableColumn fx:id="T_per_address" prefWidth="75.0" text="Permanent Address" />
+         </columns>
+      </TableView>
+      <Button defaultButton="true" layoutX="38.0" layoutY="80.0" mnemonicParsing="false" onAction="#goBack" stylesheets="@../CSS/smallButtonscss.css" text="Go Back">
+         <font>
+            <Font name="Times New Roman" size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

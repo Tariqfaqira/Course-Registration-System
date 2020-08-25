@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="main_anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="870.0" prefWidth="1600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dashboard.Menu">
+   <children>
+      <BorderPane layoutX="10.0" layoutY="10.0" prefHeight="850.0" prefWidth="1580.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <left>
+            <VBox style="-fx-border-width: 2; -fx-background-color: lightgray; -fx-border-color: black;" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="adminBtn" alignment="CENTER" contentDisplay="TOP" defaultButton="true" mnemonicParsing="false" onAction="#handle_Admin" prefHeight="138.0" prefWidth="170.0" stylesheets="@../CSS/menuButtons.css" text="Admin">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="studentBtn" alignment="CENTER" contentDisplay="TOP" defaultButton="true" layoutX="10.0" layoutY="46.0" mnemonicParsing="false" onAction="#handle_Student" prefHeight="138.0" prefWidth="170.0" stylesheets="@../CSS/menuButtons.css" text="Students">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="teacherBtn" alignment="CENTER" contentDisplay="TOP" defaultButton="true" layoutX="10.0" layoutY="170.0" mnemonicParsing="false" onAction="#handle_Teacher" prefHeight="138.0" prefWidth="170.0" stylesheets="@../CSS/menuButtons.css" text="Teachers">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="courseBtn" alignment="CENTER" contentDisplay="TOP" defaultButton="true" layoutX="15.0" layoutY="281.0" mnemonicParsing="false" onAction="#handle_Course" prefHeight="138.0" prefWidth="170.0" stylesheets="@../CSS/menuButtons.css" text="Courses">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="reportBtn" alignment="CENTER" contentDisplay="TOP" defaultButton="true" layoutX="10.0" layoutY="418.0" mnemonicParsing="false" onAction="#handle_report" prefHeight="138.0" prefWidth="170.0" stylesheets="@../CSS/menuButtons.css" text="Report">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="helpBtn" alignment="CENTER" contentDisplay="TOP" defaultButton="true" layoutX="10.0" layoutY="542.0" mnemonicParsing="false" onAction="#handle_help" prefHeight="138.0" prefWidth="170.0" stylesheets="@../CSS/menuButtons.css" text="Help">
+                     <font>
+                        <Font name="Times New Roman" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets bottom="3.0" left="3.0" right="3.0" top="3.0" />
+               </padding>
+            </VBox>
+         </left>
+         <center>
+            <AnchorPane fx:id="anchorPane" style="-fx-background-color: lightgray;" BorderPane.alignment="CENTER" />
+         </center>
+         <top>
+            <HBox alignment="CENTER_RIGHT" style="-fx-border-color: black; -fx-background-color: lightgray; -fx-border-width: 2;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="title_label" alignment="CENTER" prefHeight="21.0" prefWidth="1391.0" text="Main Menu" />
+                  <Button defaultButton="true" mnemonicParsing="false" onAction="#handle_signoutBtn" stylesheets="@../CSS/smallButtonscss.css" text="Sign out">
+                     <font>
+                        <Font name="Times New Roman" size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+               <padding>
+                  <Insets right="15.0" />
+               </padding>
+            </HBox>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

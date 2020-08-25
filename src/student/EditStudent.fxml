@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" prefHeight="870.0" prefWidth="1420.0" style="-fx-background-color: lightgray;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="student.EditStudent">
+   <children>
+      <AnchorPane fx:id="anchorPane_hide_main" layoutX="155.0" layoutY="147.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="599.0" prefWidth="1050.0" style="-fx-background-color: white; -fx-border-color: gray;" visible="false">
+         <children>
+            <TextField fx:id="batch_year" layoutX="182.0" layoutY="50.0" onKeyPressed="#handle_EnterPressed_UpdateForm" promptText="2018">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <CheckBox fx:id="fall" layoutX="478.0" layoutY="50.0" mnemonicParsing="false" onAction="#handle_fallBox" text="Fall">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </CheckBox>
+            <CheckBox fx:id="spring" layoutX="390.0" layoutY="50.0" mnemonicParsing="false" onAction="#handle_SpringBox" text="Spring">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </CheckBox>
+            <TextField fx:id="date" layoutX="805.0" layoutY="50.0" onKeyPressed="#handle_EnterPressed_UpdateForm" promptText="Enter the date">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="regNo" layoutX="240.0" layoutY="145.0" onKeyPressed="#handle_EnterPressed_UpdateForm" promptText="Enter registration number">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="degreeProg" layoutX="805.0" layoutY="145.0" onKeyPressed="#handle_EnterPressed_UpdateForm" promptText="Enter the degree program">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="name" layoutX="240.0" layoutY="195.0" onKeyPressed="#handle_EnterPressed_UpdateForm" promptText="Enter student name">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="degreeYear" layoutX="805.0" layoutY="195.0" onKeyPressed="#handle_EnterPressed_UpdateForm" promptText="Total year of degree:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="fName" layoutX="240.0" layoutY="245.0" onKeyPressed="#handle_EnterPressed_UpdateForm" promptText="Enter Father name">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="contact" layoutX="805.0" layoutY="245.0" onKeyPressed="#handle_EnterPressed_UpdateForm" promptText="Enter student contact number">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="dob" layoutX="240.0" layoutY="295.0" onKeyPressed="#handle_EnterPressed_UpdateForm" promptText="Enter student contact number">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="fContact" layoutX="805.0" layoutY="295.0" onKeyPressed="#handle_EnterPressed_UpdateForm" promptText="Enter father contact number">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="cnic" layoutX="240.0" layoutY="345.0" onKeyPressed="#handle_EnterPressed_UpdateForm" promptText="Enter father contact number">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="gender" layoutX="805.0" layoutY="345.0" onKeyPressed="#handle_EnterPressed_UpdateForm" promptText="Enter the gender">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="domicile" layoutX="240.0" layoutY="395.0" onKeyPressed="#handle_EnterPressed_UpdateForm" promptText="Enter cnic number">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="email" layoutX="805.0" layoutY="395.0" onKeyPressed="#handle_EnterPressed_UpdateForm" promptText="Enter email">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="630.0" layoutY="50.0" text="Date:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="145.0" text="Reg Number:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="395.0" text="Domicile:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="195.0" text="Student Name:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="295.0" text="DOB:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="245.0" text="Father Name:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="345.0" text="CNIC Number:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="cur_address" layoutX="240.0" layoutY="460.0" onKeyPressed="#handle_EnterPressed_UpdateForm" prefHeight="26.0" prefWidth="742.0" promptText="Enter permanent address">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="per_address" layoutX="240.0" layoutY="510.0" onKeyPressed="#handle_EnterPressed_UpdateForm" prefHeight="26.0" prefWidth="742.0" promptText="Enter current address">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="65.0" layoutY="460.0" text="Current Address:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="510.0" text="Permanent Address:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="65.0" layoutY="53.0" text="Batch:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="640.0" layoutY="265.0">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="630.0" layoutY="145.0" text="Degree Program:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="630.0" layoutY="345.0" text="Gender:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="630.0" layoutY="295.0" text="Father Contact No:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="630.0" layoutY="245.0" text="Contact Number:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="630.0" layoutY="395.0" text="E-Mail">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="630.0" layoutY="195.0" text="Year of Degree:">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label alignment="CENTER" layoutY="20.0" prefHeight="64.0" prefWidth="1374.0" text="Update Student Data" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="5.0">
+         <font>
+            <Font name="Times New Roman Bold" size="36.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="8.0" layoutY="75.0" prefHeight="52.0" prefWidth="1374.0" text="Bachelor of Science:          UpdateCourse Registered Form">
+         <font>
+            <Font name="Times New Roman Bold" size="20.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="anchorPane_hide_Btns" layoutX="155.0" layoutY="750.0" prefHeight="49.0" prefWidth="1050.0" style="-fx-background-color: white; -fx-border-color: gray;" visible="false">
+         <children>
+            <Button alignment="CENTER" defaultButton="true" layoutX="100.0" layoutY="11.0" mnemonicParsing="false" onAction="#handle_updateBtn" prefWidth="200.0" stylesheets="@../CSS/smallButtonscss.css" text="Update">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Button>
+            <Button alignment="CENTER" defaultButton="true" layoutX="752.0" layoutY="11.0" mnemonicParsing="false" onAction="#handle_cancleBtn" prefWidth="200.0" stylesheets="@../CSS/smallButtonscss.css" text="Cancle">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="find_anchorPane" focusTraversable="true" layoutX="449.0" layoutY="277.0" prefHeight="235.0" prefWidth="522.0" style="-fx-background-color: white;">
+         <children>
+            <TextField fx:id="findReg" layoutX="135.0" layoutY="119.0" onKeyPressed="#handle_enter_presser" promptText="Enter Reg No">
+               <font>
+                  <Font name="Times New Roman" size="15.0" />
+               </font></TextField>
+            <Button defaultButton="true" layoutX="330.0" layoutY="119.0" mnemonicParsing="false" onAction="#handle_findRegInDB" stylesheets="@../CSS/smallButtonscss.css" text="Find">
+               <font>
+                  <Font name="Times New Roman Bold" size="15.0" />
+               </font>
+            </Button>
+            <Label alignment="CENTER" layoutY="35.0" text="Enter Reg Number To Update Student Data" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+               <font>
+                  <Font name="Times New Roman Bold" size="18.0" />
+               </font>
+            </Label>
+            <Button defaultButton="true" layoutX="225.0" layoutY="182.0" mnemonicParsing="false" onAction="#handle_findCancle" stylesheets="@../CSS/smallButtonscss.css" text="Cancle">
+               <font>
+                  <Font name="Times New Roman" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
